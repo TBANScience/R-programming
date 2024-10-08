@@ -1,6 +1,50 @@
-v <- c(1,2,3,4,5,6,7,8,9)
-v
-class(v)
-f <- as.factor(v)
-f
-re_f <- factor(v,levels = c(a,b,c,d,e,f,g,h,i))
+library(tidyverse)
+library(gapminder)
+library(readxl)
+library(here)
+lib
+getwd()
+
+here("R-programming","book.xlsx")
+d <- read_excel("book.xlsx")
+d
+View(d)
+d %>% glimpse()
+a <- read_excel("abc.xlsx")
+a
+a %>% glimpse()
+a %>% names()
+dim(a)
+i <- read_csv("iris.csv")
+i
+
+i %>% glimpse()
+
+i %>% skim()
+unique(i$variety)
+levels(i$variety)
+names(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
